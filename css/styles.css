@@ -18,8 +18,11 @@ body {
   list-style: none;
 }
 
-/* сброс ростояния елементов */
-
+/* сброс ростояния елементов и разметка */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* размеры страницы */
 .container {
   width: 1200px;
@@ -42,6 +45,15 @@ body {
 }
 
 /* ссылки шапка и подвал*/
+.nav,
+.contacts {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+/* .nav {
+  display: flex;
+} */
 .nav .link,
 .contacts .link {
   font-weight: 500;
@@ -50,7 +62,14 @@ body {
   color: inherit;
   text-decoration: none;
   letter-spacing: 0.02em;
+  /* margin-right: 50px; */
 }
+.nav .link:not(:last-child) {
+  margin-right: 50px;
+}
+/* .contacts .link:last-child {
+  margin-right: 0;
+} */
 .contacts .link {
   color: #757575;
 }
@@ -63,8 +82,10 @@ body {
 /* Герой секция */
 .hero {
   background-color: var(--footer-hero-background);
-  /* align-items: center;
-  text-align: center; */
+  height: 600px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 .hero-title {
   color: #ffffff;
@@ -84,6 +105,9 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
 }
 .hero .btn:hover,
 .herro.btn:focus {
@@ -91,45 +115,72 @@ body {
 }
 
 /* умение компании */
+.skills {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 .skills-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 .skills-text {
   color: #757575;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  margin: 0;
+  padding: 0;
 }
 
 /* деятельность компании  */
 .images-title,
-.team-subjuct {
+.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.images-list,
+.team-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 /* Сотрудники компании */
 .team {
   background-color: var(--sub-backgrount);
 }
-.team-title {
+.team-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  margin: 0;
+  padding: 0;
 }
 .team-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.17;
   color: #757575;
+  margin: 0;
+  padding: 0;
 }
 
 /*секция main portfolio */
 /* кнопки */
+
+.gallery {
+  margin: 0;
+  padding: 0;
+}
 .gallery-btn {
   background-color: var(--sub-backgrount);
   font-weight: 500;
@@ -147,6 +198,10 @@ body {
 }
 
 /* проекты  */
+.project-list {
+  margin: 0;
+  padding: 0;
+}
 .project-link {
   text-decoration: none;
   color: inherit;
@@ -156,12 +211,16 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin: 0;
+  padding: 0;
 }
 .project-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   color: #757575;
+  margin: 0;
+  padding: 0;
 }
 
 /* подвал */
