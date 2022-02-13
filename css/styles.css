@@ -13,8 +13,10 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* сброс стилей ul,li */
+/* сброс стилей ul,li утилиты */
 .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -28,7 +30,15 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* главное меню Flex */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* логотип */
@@ -47,13 +57,13 @@ body {
 /* ссылки шапка и подвал*/
 .nav,
 .contacts {
-  margin: 0;
-  padding: 0;
   display: flex;
 }
-/* .nav {
-  display: flex;
-} */
+.nav {
+  margin-left: 93px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .nav .link,
 .contacts .link {
   font-weight: 500;
@@ -62,14 +72,12 @@ body {
   color: inherit;
   text-decoration: none;
   letter-spacing: 0.02em;
-  /* margin-right: 50px; */
 }
-.nav .link:not(:last-child) {
+.nav-item:not(:last-child),
+.contacts-item:not(:last-child) {
   margin-right: 50px;
 }
-/* .contacts .link:last-child {
-  margin-right: 0;
-} */
+
 .contacts .link {
   color: #757575;
 }
@@ -83,18 +91,23 @@ body {
 .hero {
   background-color: var(--footer-hero-background);
   height: 600px;
+  width: 100%;
   align-items: center;
   text-align: center;
   justify-content: center;
 }
 .hero-title {
   color: #ffffff;
+  width: 696px;
+  left: 473px;
+  top: 260px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 auto 30px;
+  padding-top: 180px;
 }
 .hero .btn {
   font-family: inherit;
@@ -116,9 +129,13 @@ body {
 
 /* умение компании */
 .skills {
-  margin: 0;
-  padding: 0;
   display: flex;
+}
+.skills-items {
+  width: 270px;
+}
+.skills-items:not(:last-child) {
+  margin-right: 30px;
 }
 .skills-title {
   font-weight: 700;
@@ -138,25 +155,30 @@ body {
 }
 
 /* деятельность компании  */
+
+.images-list,
+.team-list {
+  display: flex;
+}
 .images-title,
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  margin: 0;
+  margin: 0 0 50px;
   padding: 0;
   text-align: center;
 }
-.images-list,
-.team-list {
-  margin: 0;
-  padding: 0;
-  display: flex;
+.images-items:nth-of-type(3n) {
+  margin-right: 30px;
 }
 
 /* Сотрудники компании */
 .team {
   background-color: var(--sub-backgrount);
+}
+.team-items {
+  justify-items: center;
 }
 .team-subtitle {
   font-weight: 500;
@@ -175,12 +197,9 @@ body {
 }
 
 /*секция main portfolio */
+
 /* кнопки */
 
-.gallery {
-  margin: 0;
-  padding: 0;
-}
 .gallery-btn {
   background-color: var(--sub-backgrount);
   font-weight: 500;
@@ -198,10 +217,6 @@ body {
 }
 
 /* проекты  */
-.project-list {
-  margin: 0;
-  padding: 0;
-}
 .project-link {
   text-decoration: none;
   color: inherit;
@@ -226,6 +241,8 @@ body {
 /* подвал */
 .footer {
   background-color: var(--footer-hero-background);
+  height: 252px;
+  justify-content: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -242,4 +259,7 @@ body {
 .footer .link:hover,
 .footer .link:focus {
   color: var(--color-accent);
+}
+.footer-adr {
+  width: 231px;
 }
