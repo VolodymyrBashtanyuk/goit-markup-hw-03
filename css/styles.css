@@ -258,6 +258,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  border: 1px solid #000000;
 }
 .footer-adr,
 .footer a {
