@@ -242,7 +242,7 @@ body {
 .footer {
   background-color: var(--footer-hero-background);
   height: 252px;
-  justify-content: center;
+  /* justify-content: center; */
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -262,4 +262,9 @@ body {
 }
 .footer-adr {
   width: 231px;
+  margin-top: 20px;
+}
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
