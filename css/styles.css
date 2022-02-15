@@ -40,7 +40,9 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
+.border {
+  border-bottom: 1px solid #ececec;
+}
 /* логотип */
 .logo {
   font-family: 'Raleway', sans-serif;
