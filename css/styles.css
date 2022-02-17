@@ -35,14 +35,15 @@ body {
 }
 
 /* главное меню Flex */
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .main-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.border {
-  border-bottom: 1px solid #ececec;
-}
+
 /* логотип */
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -63,6 +64,9 @@ body {
 }
 .nav {
   margin-left: 93px;
+}
+.nav .link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -95,6 +99,8 @@ body {
   align-items: center;
   text-align: center;
   justify-content: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   color: #ffffff;
@@ -105,7 +111,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0 auto 30px;
-  padding-top: 180px;
 }
 .hero .btn {
   background-color: var(--color-accent);
@@ -119,7 +124,6 @@ body {
   border-radius: 4px;
   border: 0;
   padding: 10px 32px;
-  margin-bottom: 220px;
 }
 .hero .btn:hover,
 .herro.btn:focus {
@@ -142,6 +146,8 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 10px;
+
   padding: 0;
 }
 .skills-text {
@@ -154,6 +160,10 @@ body {
 }
 
 /* деятельность компании  */
+
+.images {
+  padding-top: 0;
+}
 
 .images-list,
 .team-list {
@@ -185,8 +195,12 @@ body {
 .team-items:not(:last-child) {
   margin-right: 30px;
 }
+.team-text-cont {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-img {
-  margin-bottom: 30px;
+  display: block;
 }
 .team-subtitle {
   font-weight: 500;
@@ -200,8 +214,8 @@ body {
   font-size: 16px;
   line-height: 1.17;
   color: #757575;
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0;
+  /* margin-bottom: 30px; */
 }
 
 /*секция main portfolio */
@@ -240,13 +254,13 @@ body {
   flex-wrap: wrap;
 }
 .project-img {
+  display: block;
   border: 0;
 }
 .project-item {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  border-bottom: 1px solid #eeeeee;
 }
 .project-item:nth-child(3n) {
   margin-right: 0;
@@ -259,14 +273,17 @@ body {
   color: inherit;
 }
 .project-text-cont {
-  margin: 20px 24px;
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: 0;
 }
 .project-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 4px;
 }
 .project-text {
   font-weight: 400;
@@ -283,6 +300,8 @@ body {
   font-size: 14px;
   line-height: 1.71;
   border: 1px solid #000000;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-adr,
 .footer a {
@@ -298,12 +317,7 @@ body {
   color: var(--color-accent);
 }
 .footer-adr {
-  width: 231px;
   margin-top: 20px;
-}
-.footer .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
