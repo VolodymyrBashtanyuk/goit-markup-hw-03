@@ -178,6 +178,9 @@ body {
   padding: 0;
   text-align: center;
 }
+.images-img {
+  display: block;
+}
 .images-items:not(:last-child) {
   margin-right: 30px;
 }
@@ -307,6 +310,9 @@ body {
 .footer a {
   color: #ffffff;
   font-style: inherit;
+}
+.link-adr {
+  text-decoration: none;
 }
 .footer .link {
   color: rgba(255, 255, 255, 0.6);
